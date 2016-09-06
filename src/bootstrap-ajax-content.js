@@ -5,7 +5,7 @@ $(".panel.ajax-content").on('show.bs.collapse', function (e) {
         return;
     }
     e.preventDefault();
-    $(this).find(".panel-body").find(".panel-body").load($(this).attr('data-url'));
+    $(this).find(".panel-body").load($(this).attr('data-url'));
     $(this).attr("ajax-loaded", "true");
     $(this).find('.panel-body').collapse("show");
 });
