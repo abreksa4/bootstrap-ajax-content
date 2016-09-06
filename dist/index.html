@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bootstrap-ajax-content</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<div class="content">
+	<div class="row">
+		<div class="col-lg-4">
+			<div class="panel-group">
+				<div class="panel panel-default ajax-content" data-url="partial/panel1.html">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse1">Collapsible panel 1</a>
+						</h4>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse">
+						<div class="panel-body"></div>
+						<div class="panel-footer">Panel Footer</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="panel-group">
+				<div class="panel panel-default ajax-content" data-url="partial/panel2.html">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a data-toggle="collapse" href="#collapse2">Collapsible panel 2</a>
+						</h4>
+					</div>
+					<!-- here we specify that the panel is already open with the "in" class, this content will be loaded automagically -->
+					<div id="collapse2" class="panel-collapse collapse in">
+						<div class="panel-body"></div>
+						<div class="panel-footer">Panel Footer</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<div class="panel panel-default ajax-content" data-url="partial/panel3.html">
+				<div class="panel-heading">Static panel 3</div>
+				<div class="panel-body"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<ul class="nav nav-pills ajax-content">
+				<li class="active ajax-content" data-url="partial/tab1.html">
+					<a data-toggle="pill" href="#homePill">Home</a></li>
+				<li class="ajax-content" data-url="partial/tab2.html"><a data-toggle="pill" href="#menu1Pill">Menu 1</a>
+				</li>
+				<li class="ajax-content" data-url="partial/tab3.html"><a data-toggle="pill" href="#menu2Pill">Menu 2</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="homePill" class="tab-pane fade in active">
+				</div>
+				<div id="menu1Pill" class="tab-pane fade">
+				</div>
+				<div id="menu2Pill" class="tab-pane fade">
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<ul class="nav nav-tabs ajax-content">
+				<li class="active ajax-content" data-url="partial/tab1.html"><a data-toggle="tab" href="#home">Home</a>
+				</li>
+				<li class="ajax-content" data-url="partial/tab2.html"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+				<li class="ajax-content" data-url="partial/tab3.html"><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="home" class="tab-pane fade in active">
+				</div>
+				<div id="menu1" class="tab-pane fade">
+				</div>
+				<div id="menu2" class="tab-pane fade">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+		</div>
+	</div>
+</div>
+<div id="myModal" class="modal fade ajax-content" role="dialog" data-url="partial/modal1.html">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="bootstrap-ajax-content.min.js"></script>
+</body>
+</html>

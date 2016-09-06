@@ -1,0 +1,11 @@
+{
+	"name": "bootstrap-ajax-content",
+	"authors": [
+		"Andrew Breksa <abreksa4@gmail.com>"
+	],
+	"description": "Load bootstrap tab, pill, panel and modal content via ajax",
+	"main": "dist/bootstrap-ajax-content.min.js",
+	"license": "MIT",
+	"homepage": "",
+	"private": true,
+}
