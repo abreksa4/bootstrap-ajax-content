@@ -7,5 +7,5 @@
 	"main": "dist/bootstrap-ajax-content.min.js",
 	"license": "MIT",
 	"homepage": "",
-	"private": true,
+	"private": true
 }
