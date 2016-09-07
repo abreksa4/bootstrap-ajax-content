@@ -18,7 +18,7 @@ gulp.task('lib', function () {
 });
 
 gulp.task('merge', function () {
-    return gulp.src([src + '/**/*.html', src + 'index.html', src + '../lib/*'])
+    return gulp.src([src + '/**/*.html', src + 'index.html', src + '../lib/*', src + 'spin.gif'])
         .pipe(gulp.dest(dist));
 });
 
