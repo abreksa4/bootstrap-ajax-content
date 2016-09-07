@@ -1,6 +1,8 @@
 # bootstrap-ajax-content
 
-_Allows fetching Bootstrap Tab, Pill, Panel, and Modal content via AJAX with a single class and one attribute_
+_Allows fetching Bootstrap Tab, Pill, Panel, and Modal HTML content via ajax automagically_
+
+This ia not a robust solution, and should only be used to load content when a GET request is all that is required. 
 
 Requires jQuery 1.12.4 and Bootstrap 3.3.7
 
