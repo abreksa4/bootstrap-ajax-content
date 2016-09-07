@@ -2,11 +2,13 @@
 
 _Allows fetching Bootstrap Tab, Pill, Panel, and Modal content via AJAX with a single class and one attribute_
 
-Browse `./dist` to view a demo. 
+Browse `./dist` to view a demo.
+
+Include `<script>$('locator').ajaxifyContent();</<script>` to active ajax content loading on that element.
 
 ## Tab
 ```
-<li class="ajax-content" data-url="partial/tab2.html"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+<li data-url="partial/tab2.html"><a data-toggle="tab" href="#menu1">Menu 1</a></li>
 ...
 <div class="tab-content">
 	...
@@ -17,7 +19,7 @@ Browse `./dist` to view a demo.
 
 ## Pill
 ```
-<li class="ajax-content" data-url="partial/tab2.html"><a data-toggle="pill" href="#menu1Pill">Menu 1</a>
+<li data-url="partial/tab2.html"><a data-toggle="pill" href="#menu1Pill">Menu 1</a>
 ...
 <div class="tab-content">
 	...
@@ -28,7 +30,7 @@ Browse `./dist` to view a demo.
 
 ## Panels
 ```
-<div class="panel panel-default ajax-content" data-url="partial/panel3.html">
+<div class="panel panel-default" data-url="partial/panel3.html">
 	...
 	<div class="panel-body"></div>
 	...
@@ -37,7 +39,7 @@ Browse `./dist` to view a demo.
 The same goes for collapsible panels, by default no content is loaded until the panel is opened. Panels that are open by default (`<div id="collapse2" class="panel-collapse collapse in">`) are treated as normal panels. 
 ```
 <div class="panel-group">
-	<div class="panel panel-default ajax-content" data-url="partial/panel2.html">
+	<div class="panel panel-default" data-url="partial/panel2.html">
 		...
 		<div id="collapse2" class="panel-collapse collapse">
 			<div class="panel-body"></div>
@@ -45,7 +47,7 @@ The same goes for collapsible panels, by default no content is loaded until the 
 ```
 ## Modals
 ```
-<div id="myModal" class="modal fade ajax-content" role="dialog" data-url="partial/modal1.html">
+<div id="myModal" class="modal fade" role="dialog" data-url="partial/modal1.html">
 	<div class="modal-dialog">
 		<div class="modal-content">
 		</div>
