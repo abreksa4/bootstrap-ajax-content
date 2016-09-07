@@ -2,6 +2,8 @@
 
 _Allows fetching Bootstrap Tab, Pill, Panel, and Modal content via AJAX with a single class and one attribute_
 
+Requires jQuery 1.12.4 and Bootstrap 3.3.7
+
 Browse `./dist` to view a demo.
 
 Include `<script>$('locator').ajaxifyContent();</<script>` to active ajax content loading on that element.
