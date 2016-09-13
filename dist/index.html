@@ -106,6 +106,12 @@
 <script src="bootstrap-ajax-content.min.js"></script>
 <script>
 	$('.ajax-content').ajaxifyContent();
+	$(".content").append('<div class=row><div class="col-lg-4">' +
+			'<div id="panel4" class="panel panel-default" data-ajax-url="partial/panel4.html">' +
+			'<div class="panel-heading">Static panel 4</div> ' +
+			'<div class="panel-body"><img src="spin.gif">' +
+			'</div></div></div></div>');
+	$("#panel4").ajaxifyContent();
 </script>
 </body>
 </html>
