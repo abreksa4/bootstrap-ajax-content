@@ -17,7 +17,7 @@
                         $(this).find('.panel-collapse.collapse').collapse("show");
                     });
                 }
-            } else if ($(this).is('.nav.nav-pills.ajax-content, .nav.nav-tabs')) {
+            } else if ($(this).is('.nav.nav-pills, .nav.nav-tabs')) {
                 if ($(this).find('li.active a').length > 0) {
                     $(this).find('li.active a').each(function (index) {
                         id = $(this).attr('href');
