@@ -23,7 +23,7 @@ Include `<script>$('locator').ajaxifyContent();</<script>` to active ajax conten
 
 ## Pill
 ```
-<li data-url="partial/tab2.html"><a data-toggle="pill" href="#menu1Pill">Menu 1</a>
+<li data-ajax-url="partial/tab2.html"><a data-toggle="pill" href="#menu1Pill">Menu 1</a>
 ...
 <div class="tab-content">
 	...
@@ -34,7 +34,7 @@ Include `<script>$('locator').ajaxifyContent();</<script>` to active ajax conten
 
 ## Panels
 ```
-<div class="panel panel-default" data-url="partial/panel3.html">
+<div class="panel panel-default" data-ajax-url="partial/panel3.html">
 	...
 	<div class="panel-body"></div>
 	...
@@ -43,7 +43,7 @@ Include `<script>$('locator').ajaxifyContent();</<script>` to active ajax conten
 The same goes for collapsible panels, by default no content is loaded until the panel is opened. Panels that are open by default (`<div id="collapse2" class="panel-collapse collapse in">`) are treated as normal panels. 
 ```
 <div class="panel-group">
-	<div class="panel panel-default" data-url="partial/panel2.html">
+	<div class="panel panel-default" data-ajax-url="partial/panel2.html">
 		...
 		<div id="collapse2" class="panel-collapse collapse">
 			<div class="panel-body"></div>
@@ -51,11 +51,11 @@ The same goes for collapsible panels, by default no content is loaded until the 
 ```
 ## Modals
 ```
-<div id="myModal" class="modal fade" role="dialog" data-url="partial/modal1.html">
+<div id="myModal" class="modal fade" role="dialog" data-ajax-url="partial/modal1.html">
 	<div class="modal-dialog">
 		<div class="modal-content">
 		</div>
 	...
 ```
-The content returned from `data-url` overwrites all content under `.modal-content`.
+The content returned from `data-ajax-url` overwrites all content under `.modal-content`.
 

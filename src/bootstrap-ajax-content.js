@@ -3,7 +3,7 @@
         $(this).each(function (index) {
             if ($(this).is('.panel')) {
                 if ($(this).find('.panel-collapse.collapse.in').length > 0 || $(this).find('.collapse').length == 0) {
-                    $(this).find(".panel-body").load($(this).attr('data-url'));
+                    $(this).find(".panel-body").load($(this).attr('data-ajax-url'));
                     $(this).attr("ajax-loaded", "true");
                 }
                 if ($(this).find('.collapse:not(in)').length > 0) {
@@ -12,7 +12,7 @@
                             return;
                         }
                         e.preventDefault();
-                        $(this).find(".panel-body").load($(this).attr('data-url'));
+                        $(this).find(".panel-body").load($(this).attr('data-ajax-url'));
                         $(this).attr("ajax-loaded", "true");
                         $(this).find('.panel-collapse.collapse').collapse("show");
                     });
@@ -21,7 +21,7 @@
                 if ($(this).find('li.active a').length > 0) {
                     $(this).find('li.active a').each(function (index) {
                         id = $(this).attr('href');
-                        $(id).load($(this).parent('li').attr('data-url'));
+                        $(id).load($(this).parent('li').attr('data-ajax-url'));
                         $(this).parent('li').attr("ajax-loaded", "true");
                     });
                 }
@@ -32,7 +32,7 @@
                         }
                         e.preventDefault();
                         id = $(this).attr('href');
-                        $(id).load($(this).parent('li').attr('data-url'));
+                        $(id).load($(this).parent('li').attr('data-ajax-url'));
                         $(this).parent('li').attr("ajax-loaded", "true");
                         $(this).tab("show");
                     })
@@ -43,7 +43,7 @@
                         return;
                     }
                     e.preventDefault();
-                    $(this).find('.modal-dialog .modal-content').load($(this).attr('data-url'));
+                    $(this).find('.modal-dialog .modal-content').load($(this).attr('data-ajax-url'));
                     $(this).attr("ajax-loaded", "true");
                     $(this).modal("show");
                 })
